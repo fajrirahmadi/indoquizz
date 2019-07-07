@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">IndoQuizz</string>
+    <string name="home">Beranda</string>
+    <string name="find">Cari</string>
+    <string name="voucher">Voucher</string>
+    <string name="profile">Profil</string>
+    <string name="label_info">Info</string>
+    <string name="teman">Teman</string>
+    <string name="permintaan_teman">Permintaan Teman</string>
+    <string name="claim">Claim</string>
+    <string name="lempar_kuis">Lempar Kuis</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="profile_menu_id" type="id"/>
+    <item name="detail_influencer_id" type="id"/>
+    <item name="faq_id" type="id"/>
+    <item name="order_history_id" type="id"/>
+    <item name="quiz_main_id" type="id"/>
+    <item name="voucher_id" type="id"/>
+    <item name="user_id" type="id"/>
+    <item name="friend_id" type="id"/>
+</resources>

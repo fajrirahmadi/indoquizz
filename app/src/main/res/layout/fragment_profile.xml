@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout_center_title"/>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                <RelativeLayout
+                        android:id="@+id/profileHeaderArea"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:layout_width="@dimen/image_big"
+                        android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/profilePictureImageView"
+                            android:layout_width="@dimen/image_big"
+                            android:layout_height="@dimen/image_big"
+                            android:padding="1dp"
+                            android:background="@drawable/circle_border_grey"/>
+                    <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/profileGradeImageView"
+                            android:layout_width="@dimen/image_medium"
+                            android:layout_height="@dimen/image_medium"
+                            android:src="@drawable/ic_medal_bronze"
+                            android:layout_marginTop="48dp"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/nameTextView"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:layout_toEndOf="@id/profileHeaderArea"
+                        android:text="Fajri Rahmadi"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/montserrat_black"
+                        android:textSize="@dimen/text_normal"
+                        style="@style/headerTextView"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/pointTextView"
+                        android:layout_below="@id/nameTextView"
+                        android:layout_toEndOf="@id/profileHeaderArea"
+                        android:text="100 Point"
+                        android:fontFamily="@font/montserrat_light"
+                        android:layout_marginTop="@dimen/margin_very_small"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_medium"
+                        style="@style/normalTextViewBlack"/>
+            </RelativeLayout>
+
+            <View style="@style/Line"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/normalTextViewBlack"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:text="@string/teman"
+                    android:textSize="@dimen/text_medium"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/colorPrimary"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/friendListRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/noFriendListTextView"
+                    style="@style/headerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textSize="@dimen/text_medium"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="Belum Ada Daftar Pertemanan"/>
+
+            <View style="@style/Line"
+                  android:layout_marginTop="@dimen/margin_medium"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/normalTextViewBlack"
+                    android:textSize="@dimen/text_medium"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/permintaan_teman"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/friendRequestRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/noFriendRequestTextView"
+                    style="@style/headerTextView"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:textSize="@dimen/text_medium"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textColor="@color/text_color"
+                    android:text="Tidak ada permintaan pertemanan"/>
+
+            <View style="@style/Line"
+                  android:layout_marginTop="@dimen/margin_medium"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/profileMenuRecycleView"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <View style="@style/Line"
+                  android:layout_height="@dimen/margin_very_large"
+                  android:background="@color/transparent"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

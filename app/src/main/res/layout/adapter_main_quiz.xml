@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:padding="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/userPostImageView"
+                android:layout_width="@dimen/image_medium"
+                android:layout_height="@dimen/image_medium"
+                android:background="@drawable/circle_border_grey"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/userNameTextView"
+                style="@style/normalTextViewBlack"
+                android:text="Fajri Rahmadi"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageQuestionTextView"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/promo_01"
+            android:background="@color/white"/>
+
+    <RelativeLayout
+            android:padding="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/loveButton"
+                android:layout_width="@dimen/image_small"
+                android:layout_height="@dimen/image_small"
+                android:src="@drawable/ic_unlike"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/shareButton"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/image_small"
+                android:layout_height="@dimen/image_small"
+                android:src="@drawable/ic_share"/>
+    </RelativeLayout>
+
+    <View style="@style/Line"
+          android:layout_height="0.5dp"
+          android:background="@color/colorPrimary"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            style="@style/headerTextView"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_gravity="center_horizontal"
+            android:text="KUIS"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_medium"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/questionTextView"
+            style="@style/normalTextViewBlack"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/text_medium"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:fontFamily="@font/montserrat_light"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="Manakah yang tidak termasuk kota di DKI Jakarta?"/>
+
+    <LinearLayout
+            android:id="@+id/areaFirst"
+            android:padding="@dimen/margin_medium"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/firstAnswerTextView"
+                android:layout_width="0dp"
+                android:text="Jakarta Barat"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/white"
+                android:background="@drawable/background_answer_button"
+                android:textAllCaps="false"
+                android:layout_marginEnd="@dimen/margin_medium"
+                style="@style/normalButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/secondAnswerTextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:layout_height="40dp"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/white"
+                android:background="@drawable/background_answer_button"
+                android:text="Jakarta Selatan"
+                android:layout_marginStart="@dimen/margin_medium"
+                style="@style/normalButton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/areaSecond"
+            android:padding="@dimen/margin_medium"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/thirdAnswerTextView"
+                android:layout_width="0dp"
+                android:text="Jakarta Utara"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/white"
+                android:background="@drawable/background_answer_button"
+                android:textAllCaps="false"
+                android:layout_marginEnd="@dimen/margin_medium"
+                style="@style/normalButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/forthAnswerTextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="@dimen/text_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/background_answer_button"
+                android:text="Jakarta Tengah"
+                android:layout_marginStart="@dimen/margin_medium"
+                style="@style/normalButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

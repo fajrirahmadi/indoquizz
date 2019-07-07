@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5271dd</color>
+    <color name="colorPrimaryDark">#5271dd</color>
+    <color name="colorAccent">#ff038e</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="base_color">#ebebeb</color>
+
+    <color name="black">#000000</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="light_grey">#05D8D8D8</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0000ff</color>
+    <color name="red">#f0ff0000</color>
+    <color name="green">#0cc00c</color>
+
+    <color name="button_green_enable">#EE3124</color>
+    <color name="button_green_disable">#50EE3124</color>
+
+    <color name="text_color">#333333</color>
+
+    <color name="black_background">#c5ffffff</color>
+    <color name="line_color">#50333333</color>
+
+    <!--Start primary new color-->
+    <color name="primaryRed">#EE3124</color>
+    <color name="primaryGreen">#008C93</color>
+    <color name="primaryBlack">#181818</color>
+    <color name="primaryGray">#ECECEC</color>
+    <color name="primaryBlue">#C8E9EF</color>
+    <!--End primary new color-->
+
+    <!--Start secondary new color-->
+    <color name="secondaryYellow">#FED951</color>
+    <color name="secondaryBlack">#4A4A4A</color>
+    <color name="secondaryGray">#9B9B9B</color>
+    <color name="secondaryRed">#D0021B</color>
+    <!--End secondary new color-->
+
+    <color name="apani">#ff038e</color>
+    <color name="niapalagi">#5271dd</color>
+</resources>

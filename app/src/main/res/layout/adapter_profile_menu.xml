@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_small"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/profileMenuIcon"
+            android:layout_width="@dimen/image_normal"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/image_normal"
+            android:background="@drawable/button_faq"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/profileMenuLabel"
+            style="@style/normalTextViewBlack"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/text_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>
